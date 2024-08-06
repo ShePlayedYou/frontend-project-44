@@ -1,4 +1,7 @@
 #!/usr/bin/env node
 import brainEven from '../games/brainEven.js';
+import playing from '../src/index.js';
 
-brainEven();
+const whatToDo = 'Answer "yes" if the number is even, otherwise answer "no".';
+
+playing(whatToDo, brainEven);
