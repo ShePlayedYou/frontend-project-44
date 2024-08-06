@@ -5,3 +5,6 @@
 
 Demo of brain-even game launch
 [![asciicast](https://asciinema.org/a/gLvJxAy9fFtPeuqfPmdwwbdCN.svg)](https://asciinema.org/a/gLvJxAy9fFtPeuqfPmdwwbdCN)
+
+Demo of brain-calc game launch
+[![asciicast](https://asciinema.org/a/fvbdu5mWjh9hZ6W8EJOtq7YzX.svg)](https://asciinema.org/a/fvbdu5mWjh9hZ6W8EJOtq7YzX)
