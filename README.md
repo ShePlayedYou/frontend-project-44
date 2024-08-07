@@ -14,3 +14,6 @@ Demo of brain-gcd game launch
 
 Demo of brain-progression game launch
 [![asciicast](https://asciinema.org/a/mvexAX0J0aUqpvTLhgQqce4zv.svg)](https://asciinema.org/a/mvexAX0J0aUqpvTLhgQqce4zv)
+
+Demo of brain-prime game launch
+[![asciicast](https://asciinema.org/a/UnKztqZ1WzmtbkA67bAfW4bfX.svg)](https://asciinema.org/a/UnKztqZ1WzmtbkA67bAfW4bfX)
