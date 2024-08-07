@@ -11,3 +11,6 @@ Demo of brain-calc game launch
 
 Demo of brain-gcd game launch
 [![asciicast](https://asciinema.org/a/z95mydPGj7QwsOdNxUiwv9U3N.svg)](https://asciinema.org/a/z95mydPGj7QwsOdNxUiwv9U3N)
+
+Demo of brain-progression game launch
+[![asciicast](https://asciinema.org/a/mvexAX0J0aUqpvTLhgQqce4zv.svg)](https://asciinema.org/a/mvexAX0J0aUqpvTLhgQqce4zv)
