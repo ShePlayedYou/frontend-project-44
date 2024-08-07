@@ -8,3 +8,6 @@ Demo of brain-even game launch
 
 Demo of brain-calc game launch
 [![asciicast](https://asciinema.org/a/fvbdu5mWjh9hZ6W8EJOtq7YzX.svg)](https://asciinema.org/a/fvbdu5mWjh9hZ6W8EJOtq7YzX)
+
+Demo of brain-gcd game launch
+[![asciicast](https://asciinema.org/a/z95mydPGj7QwsOdNxUiwv9U3N.svg)](https://asciinema.org/a/z95mydPGj7QwsOdNxUiwv9U3N)
