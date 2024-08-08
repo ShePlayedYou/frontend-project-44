@@ -15,7 +15,7 @@ const playing = (whatToDo, func = () => {}) => {
       correctAnswers += 1;
     } else {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.
-Let's try again, ${userName}`);
+Let's try again, ${userName}!`);
       return;
     }
   }
