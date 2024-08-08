@@ -26,11 +26,11 @@ make package-uninstall
 ### Инструкция по запуску
 Запуск игр из терминала после установки пакета:
 
-brain-even
-brain-calc
-brain-gcd
-brain-prime
-brain-progression
+- brain-even
+- brain-calc
+- brain-gcd
+- brain-prime
+- brain-progression
 
 
 Demo of brain-even game launch
