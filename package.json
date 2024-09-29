@@ -1,8 +1,8 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/ShePlayedYou/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/ShePlayedYou/frontend-project-44/actions)",
-  "main": "brain-games.js",
+  "description": "First Hexlet project with 5 brain games",
+  "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,8 +20,6 @@
   "dependencies": {
     "@hexlet/pairs": "^1.1.1",
     "eslint-plugin-fp": "^2.3.0",
-    "install": "^0.13.0",
-    "npm": "^10.8.2",
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
