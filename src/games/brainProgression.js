@@ -4,11 +4,12 @@ import generateNumber from '../helpers.js';
 const whatToDo = 'What number is missing in the progression?';
 
 const encryptProgressionDigit = (array) => {
+  const encryptedArray = array;
   const symbol = '..';
   const randomNumberIndexWithSymbol = Math.floor(Math.random() * array.length);
-  const secretNumber = array[randomNumberIndexWithSymbol];
-  array[randomNumberIndexWithSymbol] = symbol;
-  return [array.join(' '), secretNumber];
+  const secretNumber = encryptedArray[randomNumberIndexWithSymbol];
+  encryptedArray[randomNumberIndexWithSymbol] = symbol;
+  return [encryptedArray.join(' '), secretNumber];
 };
 
 const makeProgression = (startNumber, step, progressionLength) => {

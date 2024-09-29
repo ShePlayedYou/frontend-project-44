@@ -19,7 +19,7 @@ const calculate = (number1, number2, getRandomSymbol) => {
       return number1 * number2;
     default:
       throw new Error('Unknown error! Sorry');
-  };
+  }
 };
 
 const game = () => {
@@ -31,6 +31,6 @@ const game = () => {
   return [question, correctAnswer];
 };
 
-const brainCalc = () => playing(whatToDo, game)
+const brainCalc = () => playing(whatToDo, game);
 
 export default brainCalc;

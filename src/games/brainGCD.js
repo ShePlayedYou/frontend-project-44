@@ -1,5 +1,5 @@
-import playing from "../index.js";
-import generateNumber from "../helpers.js";
+import playing from '../index.js';
+import generateNumber from '../helpers.js';
 
 const whatToDo = 'Find the greatest common divisor of given numbers.';
 
@@ -22,6 +22,6 @@ const game = () => {
   return [question, correctAnswer];
 };
 
-const brainGcd = () => playing(whatToDo, game)
+const brainGcd = () => playing(whatToDo, game);
 
 export default brainGcd;

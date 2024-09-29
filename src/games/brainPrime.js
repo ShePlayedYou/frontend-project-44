@@ -1,5 +1,5 @@
-import playing from "../index.js";
-import generateNumber from "../helpers.js";
+import playing from '../index.js';
+import generateNumber from '../helpers.js';
 
 const whatToDo = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
