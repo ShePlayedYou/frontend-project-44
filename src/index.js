@@ -16,7 +16,6 @@ const playing = (gameDescription, generateRound = () => {}) => {
       return;
     }
     console.log('Correct!');
-    continue;
   }
   console.log(`Congratulations, ${userName}!`);
 };
