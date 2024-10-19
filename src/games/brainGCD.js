@@ -1,11 +1,11 @@
 import playing from '../index.js';
 import generateNumber from '../helpers.js';
 
-const whatToDo = 'Find the greatest common divisor of given numbers.';
+const gameDescription = 'Find the greatest common divisor of given numbers.';
 
-const calculate = (firstNumber, secondNumber) => {
-  let a = firstNumber;
-  let b = secondNumber;
+const calculateGcd = (number1, number2) => {
+  let a = number1;
+  let b = number2;
   while (b !== 0) {
     const temp = b;
     b = a % b;
@@ -14,14 +14,14 @@ const calculate = (firstNumber, secondNumber) => {
   return a;
 };
 
-const game = () => {
-  const firstNumber = generateNumber();
-  const secondNumber = generateNumber();
-  const question = `${firstNumber} ${secondNumber}`;
-  const correctAnswer = calculate(firstNumber, secondNumber).toString();
-  return [question, correctAnswer];
+const generateRound = () => {
+  const number1 = generateNumber(1, 30);
+  const number2 = generateNumber(1, 30);
+  const question = `${number1} ${number2}`;
+  const answer = calculateGcd(number1, number2).toString();
+  return [question, answer];
 };
 
-const brainGcd = () => playing(whatToDo, game);
+const brainGcd = () => playing(gameDescription, generateRound);
 
 export default brainGcd;

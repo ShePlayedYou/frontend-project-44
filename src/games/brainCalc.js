@@ -1,16 +1,10 @@
 import generateNumber from '../helpers.js';
 import playing from '../index.js';
 
-const whatToDo = 'What is the result of the expression?';
+const gameDescription = 'What is the result of the expression?';
 
-const randomSymbol = () => {
-  const symbols = ['*', '+', '-'];
-  const randomSymbolIndex = Math.floor(Math.random() * symbols.length);
-  return symbols[randomSymbolIndex];
-};
-
-const calculate = (number1, number2, getRandomSymbol) => {
-  switch (getRandomSymbol) {
+const calculate = (number1, number2, operator) => {
+  switch (operator) {
     case '+':
       return number1 + number2;
     case '-':
@@ -18,19 +12,20 @@ const calculate = (number1, number2, getRandomSymbol) => {
     case '*':
       return number1 * number2;
     default:
-      throw new Error('Unknown error! Sorry');
+      throw new Error(`Unknown operation: '${operator}'! Sorry`);
   }
 };
 
-const game = () => {
-  const number1 = generateNumber();
-  const number2 = generateNumber();
-  const getRandomSymbol = randomSymbol();
-  const question = (`${number1} ${getRandomSymbol} ${number2}`);
-  const correctAnswer = calculate(number1, number2, getRandomSymbol).toString();
-  return [question, correctAnswer];
+const generateRound = () => {
+  const number1 = generateNumber(0, 10);
+  const number2 = generateNumber(0, 10);
+  const symbols = ['*', '+', '-'];
+  const randomOpertor = symbols[generateNumber(0, 2)];
+  const question = (`${number1} ${randomOpertor} ${number2}`);
+  const answer = calculate(number1, number2, getRandomSymbol).toString();
+  return [question, answer];
 };
 
-const brainCalc = () => playing(whatToDo, game);
+const brainCalc = () => playing(gameDescription, generateRound);
 
 export default brainCalc;

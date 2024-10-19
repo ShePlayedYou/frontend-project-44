@@ -1,34 +1,35 @@
 import playing from '../index.js';
 import generateNumber from '../helpers.js';
 
-const whatToDo = 'What number is missing in the progression?';
-
-const encryptProgressionDigit = (array) => {
-  const encryptedArray = array;
-  const symbol = '..';
-  const randomNumberIndexWithSymbol = Math.floor(Math.random() * array.length);
-  const secretNumber = encryptedArray[randomNumberIndexWithSymbol];
-  encryptedArray[randomNumberIndexWithSymbol] = symbol;
-  return [encryptedArray.join(' '), secretNumber];
-};
+const gameDescription = 'What number is missing in the progression?';
 
 const makeProgression = (startNumber, step, progressionLength) => {
-  const array = [startNumber];
-  for (let i = 0; i < progressionLength; i += 1) {
-    array.push(array[i] + step);
+  const progression = [startNumber];
+  for (let i = 1; i < progressionLength; i += 1) { 
+    progression.push(progression[i - 1] + step);
   }
-  return encryptProgressionDigit(array);
+  return progression;
 };
 
-const game = () => {
-  const startNumber = generateNumber();
-  const step = generateNumber();
-  const progressionLength = Math.floor(Math.random() * (10 - 5 + 1)) + 5;
-  const [array, secretNumber] = makeProgression(startNumber, step, progressionLength);
-  const question = (`${array}`);
+const generateRound = () => {
+  const startNumber = generateNumber(1, 10);
+  const step = generateNumber(1, 10);
+  const progressionLength = generateNumber(5, 10); 
+  
+  const progression = makeProgression(startNumber, step, progressionLength);
+  
+  const randomIndex = generateNumber(0, progressionLength - 1)
+  const secretNumber = progression[randomIndex];
+  
+  progression[randomIndex] = '..';
+  
+  const question = progression.join(' ');
+
   const answer = secretNumber.toString();
+  
   return [question, answer];
 };
 
-const brainProgression = () => playing(whatToDo, game);
+const brainProgression = () => playing(gameDescription, generateRound);
+
 export default brainProgression;

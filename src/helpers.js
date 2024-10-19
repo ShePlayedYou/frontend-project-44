@@ -1,3 +1,5 @@
-const generateNumber = () => Math.floor(Math.random() * 10) + 5;
+const generateNumber = (min, max) => {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  };
 
 export default generateNumber;
